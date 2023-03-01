@@ -72,13 +72,12 @@ export default () => {
 
 					return inside(0) && inside(1)
 				}
-				, henryInside = (element, size) =>
-					inside(element, henry, size)
+				, insidePatch = element =>
+					inside(patch, element, patchSize)
 
 				return !(
-					henryInside(patch, patchSize)
-					|| henryInside(bottle)
-					|| inside(patch, bottle, patchSize)
+					insidePatch(henry) || inside(henry, bottle)
+					|| insidePatch(bottle)
 				)
 			})()
 		&& <>
