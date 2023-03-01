@@ -1,0 +1,15 @@
+{
+	"scripts": {
+		"dev": "next"
+		, "build": "next build && next export -o docs"
+		, "start": "next start"
+	}
+	, "dependencies": {
+		"styled-components": "5.x"
+
+		, "react": "18.x"
+		, "react-dom": "18.x"
+
+		, "next": "13.x"
+	}
+}
