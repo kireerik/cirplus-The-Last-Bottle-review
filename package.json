@@ -1,7 +1,7 @@
 {
 	"scripts": {
 		"dev": "next"
-		, "build": "next build && next export -o docs"
+		, "build": "next build && next export -o page"
 		, "start": "next start"
 	}
 	, "dependencies": {
